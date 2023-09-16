@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Qual é o pais que você vive</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res">Resultado</div>
+    <script> 
+        function clicar() {
+            var pais = document.getElementById('txtpais');
+            var siap = String(pais.value)
+            var res = document.getElementById('res');
+            if (siap == "Brasil") { // Arrumar esse codigo porque só aparece Estrageiro
+                res.innerHTML ='Você É Brasileiro';
+            } else {
+                res.innerHTML = 'Você É Estrageiro';
+            }
+        }
+    </script>
+</body>
+</html>

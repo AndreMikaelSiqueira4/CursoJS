@@ -2,31 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem Vindo De Volta</title>
+    <title>MaiuMinus</title>
     <style>
         body {
-            font: 25pt arial;
-            background: rgb(248, 178, 190);
-            color: white
+            font: 20pt arial normal
         }
-
-        h1 {
-            color:rgb(28, 126, 28)
-        }
-
     </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Dessa vez eu vou me tornar um programador</p>
-    
     <script>
-        var n1 = Number(window.prompt('Digite um Numero!'))
-        var n2 = Number(window.prompt('Digite Outro Numero!'))
-        var s = n1 + n2
-        var mostra = window.alert(`A Soma do ${n1} + ${n2} é = ${s}`) 
+        var nome = prompt('Qual é seu nome?')
+        document.write(`Ola <strong>${nome}</strong> seu nome tem ${nome.length} letras.<br/>`);
+        document.write(`Seu nome em <strong>MAIÚSCULAS</strong> fica <strong>${nome.toUpperCase()}</strong><br/>`)
+        document.write(`Seu nome em <strong>minúsculas</strong> fica <strong>${nome.toLowerCase()}</strong>` )
     </script>
 </body>
 </html>

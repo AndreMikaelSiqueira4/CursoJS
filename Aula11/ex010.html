@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+    <style>
+        body {
+            font: 20pt Arial normal;
+            text-align: center;
+            background: rgb(66, 152, 250);
+        }
+
+        div#res {
+            margin-top: 20px;
+        }
+
+        div#fundo {
+            background: white;
+            border-radius: 15px;
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fundo"><h1>Sistema de multas</h1>
+        <img src="24701b804e8c06aa40e32346a9a9b62c--funny-emoji-emoji-faces.jpg" alt="emoji" width: "150px" height="150px"></br>
+    Velocidade do carro:<input type="number" name="velocidade" id="velocidade"> Km/h
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="resultadobuceta">Resultado</div></div>
+    
+    <script>
+        function clicar() {
+            var vel = document.getElementById('velocidade')
+            var res = window.document.getElementById('resultadobuceta')
+            var n1 = Number(velocidade.value)
+            res.innerHTML = `Sua velocidade atual é de <strong>${n1}Km/h</strong> </br>`
+            if (n1 > 60) {
+                res.innerHTML += ('<strong>MULTADO!</strong>')
+                
+            } else {
+                res.innerHTML += ('Use sempre cinto de segurança')
+            }
+        }
+    </script>
+</body>
+</html>
